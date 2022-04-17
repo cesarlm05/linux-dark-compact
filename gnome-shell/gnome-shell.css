@@ -1794,12 +1794,12 @@ StScrollBar StButton#hhandle:active {
   color: #ffffff;
 }
 
-/* Top Bar */
+/* Top Bar - Panel */
 #panel {
   font-weight: bold;
   font-feature-settings: "tnum";
   padding: 0 2px !important;
-  transition-duration: 250ms;
+  transition-duration: 333ms;
   background-color: rgba(0, 0, 0, 0.5);
   margin: 2px;
   border-radius: 9999px;
@@ -1824,7 +1824,7 @@ StScrollBar StButton#hhandle:active {
   -panel-corner-border-width: 0;
   -panel-corner-border-color: transparent;
   -panel-corner-opacity: 1;
-  transition-duration: 250ms;
+  transition-duration: 333ms;
 }
 
 #panel .panel-button {
@@ -1914,7 +1914,7 @@ StScrollBar StButton#hhandle:active {
 }
 
 #panel .panel-button#panelActivities:hover {
-  background-image: url("assets/activities-active-small.svg");
+  background-image: url("assets/dash-placeholder.svg");
 }
 
 #panel .panel-button#panelActivities:hover,
@@ -3386,6 +3386,8 @@ StWidget.focused .app-well-app-running-dot {
   background-color: rgba(50, 129, 234, 0.5);
 }
 
+/* Dash Dock */
+
 #dashtodockContainer {
   background: transparent;
 }
@@ -3558,7 +3560,12 @@ StWidget.focused .app-well-app-running-dot {
 
 /* Startup icon Dock */
 .show-apps .show-apps-icon {
+  height: 100%;
+  width: 100%;
   color: transparent;
   background-image: url("assets/startup@2.svg");
   background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
 }
